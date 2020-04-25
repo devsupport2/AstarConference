@@ -64,4 +64,21 @@ const options = {
 };
 const api = new JitsiMeetExternalAPI(domain, options);
 api.executeCommand('displayName', username);
-api.executeCommand('password', pass);
+//api.executeCommand('password', pass);
+
+
+setTimeout(() => {
+// why timeout: I got some trouble calling event listeners without setting a timeout :)
+    // when local user is trying to enter in a locked room 
+    api.addEventListener('passwordRequired', () => {
+        api.executeCommand('password', '123456');
+    });
+
+    // when local user has joined the video conference 
+    api.addEventListener('videoConferenceJoined', (response) => {
+        api.executeCommand('password', '123456');
+    });
+
+}, 10);
+
+document.querySelector('.watermark').style.display = 'none';
