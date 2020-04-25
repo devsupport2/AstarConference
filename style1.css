@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#555;
+    background: #ecf0f3;
+}
+.login-div {
+    width:430px;
+    height: 650px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+  }
+
+  .room-div {
+    width:200px;
+    height: 200px;
+    margin-right: 40px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+  }
+
+  .room-div:hover {
+    cursor: pointer;
+  }
+
+  .logo {
+    background:url("https://ultrasmartsolutions.com/astar/resources/admin/images/Logo.png");
+    background-size: contain;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin:0 auto;
+    box-shadow: 
+    /* logo shadow */
+    0px 0px 2px #5f5f5f,
+    /* offset */
+    0px 0px 0px 5px #ecf0f3,
+    /*bottom right */
+    8px 8px 15px #a7aaaf,
+    /* top left */
+    -8px -8px 15px #ffffff
+    ;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+  }
+  .sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+  }
+
+  .fields {
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+  }
+  .fields input {
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding:20px 10px 20px 5px;
+  }
+  .username, .password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+  }
+  .fields i {
+    font-size: 22px;
+    height: 22px;
+    margin:0 10px -3px 25px;
+  }
+  .signin-button {
+  outline: none;
+  border:none;
+  cursor: pointer;
+  width:100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align: center;
+  background: #24cfaa;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff,
+              inset 8px 8px 8px #2fdbb6,
+                inset -8px -8px 8px #1da88a;
+  transition: 0.5s;
+}
+/* .inner{
+    height:80%;
+    padding-top: 2%;
+    border-radius: 30px;
+    box-shadow: inset 8px 8px 8px #1da88a,
+                inset -8px -8px 8px #2fdbb6;
+} */
+.signin-button:hover {
+  background:#2fdbb6;
+}
+.signin-button:active {
+  background:#1da88a;
+}
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color:#aaa;
+  font-size: 15px;
+}
+
+.page-title{
+  position: fixed;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  top:20%;
+  left:30%;
+}
+
+
+
+
+
+
+
+
+  .onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+     border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+    border-radius:20px;
+    box-shadow: inset 4px 4px 4px #cbced1,
+                inset -4px -4px 4px #ffffff;
+}
+.onoffswitch-inner:before {
+    content: "dark";
+    padding-left: 10px;
+    background-color: #717D7E; color: #dddddd;
+}
+.onoffswitch-inner:after {
+    content: "light";
+    padding-right: 10px;
+    background-color: #ECF0F3; color: #555;
+    text-align: right;
+}
+.onoffswitch-switch {
+    /* display: block; width: 33px; margin: -1.5px;
+    background: #24cfaa;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;  */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	right: 56px;
+	width: 33px;
+	/* background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0); */
+    background: linear-gradient(to bottom,#24cffa 40%, #1da88a);
+	background-image: -webkit-linear-gradient(top, #24cffa 40%, #1da88a);
+	border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-switch:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	/* background: linear-gradient(to bottom, #aaaaaa, #FFFFFF);
+    background-image: -webkit-linear-gradient(top, #aaaaaa, #FFFFFF); */
+    background: linear-gradient(to bottom,#1da88a 40%, #24cffa);
+	background-image: -webkit-linear-gradient(top, #1da88a 40%, #24cffa);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}

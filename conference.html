@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link id="pagestyle" rel="stylesheet" href="style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src='https://meet.jit.si/external_api.js'></script>
+  
+  
+</head>
+<body>
+  <div id="meet"></div>
+  <script src="index.js"></script>
+</body>
+<script>
+  function swapStyleSheet(sheet) {
+    document.getElementById("pagestyle").setAttribute("href", sheet);  
+}
+
+function setTheme() {
+  if(document.getElementById("myonoffswitch").checked){
+    swapStyleSheet("style2.css");
+  } else{
+    swapStyleSheet("style1.css");
+  }
+}
+
+window.onload = setTheme;
+
+</script>
+</html>
